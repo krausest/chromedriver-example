@@ -2,7 +2,8 @@ let chrome = require('selenium-webdriver/chrome')
 let {By, until, Builder, Capabilities, WebDriver, Locator, promise, logging, WebElement, Condition} = require('selenium-webdriver')
 
 console.time("main");
-
+require('chromedriver');
+console.timeLog("main", "chromedriver required");
 let args = [
     "--js-flags=--expose-gc",
     "--enable-precise-memory-info",
