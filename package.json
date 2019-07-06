@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "node run.js"
+    "run-local": "node run-js-framework-benchmark.js",
+    "run-remote": "cross-env SELENIUM_REMOTE_URL=http://localhost:9998 node run-remote-chromedriver.js"
   },
   "author": "",
   "license": "Apache-2.0",
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
   "dependencies": {
     "chromedriver": "75.0.0",
     "selenium-webdriver": "4.0.0-alpha.1"

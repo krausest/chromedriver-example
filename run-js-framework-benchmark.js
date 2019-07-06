@@ -49,6 +49,7 @@ console.timeLog("main", "driver is created");
 driver.get(`http://chromedriver.chromium.org/`).then(() =>
 {
     console.timeLog("main", "page was loaded");
+    driver.quit();
 });
 
 /* 
@@ -57,4 +58,15 @@ Output on linux:
 main: 1.472ms configuration has been prepared
 main: 4.111ms driver is created
 main: 2129.388ms page was loaded
+
+Output on windows:
+λ node run.js
+main: 16.382ms chromedriver required
+main: 21.798ms configuration has been prepared
+main: 24.900ms driver is created
+
+DevTools listening on ws://127.0.0.1:52773/devtools/browser/74c32d5d-6323-448f-b5a3-a214adc223f4
+main: 10651.563ms page was loaded
+
+It's 8 seconds slower an windows than on linux.
 */
