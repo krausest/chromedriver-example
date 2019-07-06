@@ -58,3 +58,12 @@ main: 7.237ms configuration has been prepared
 main: 8.442ms driver is created
 main: 2234.075ms page was loaded
 ```
+## Difference in chromedriver log files
+The windows log contains a timeout which appears to cause a 4 second pause.
+```
+[1562413917.724][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1562413919.716][WARNING]: Timed out connecting to Chrome, retrying...
+[1562413919.718][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1562413921.730][DEBUG]: DevTools WebSocket Command: Log.enable (id=1) 1F35B060A99629DD7664039E2FCF7916 {
+```
+
