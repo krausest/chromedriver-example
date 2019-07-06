@@ -1,6 +1,7 @@
 # chromedriver-example
 
 js-framework-benchmarks initializes a new chrome instance for each benchmark run, which happens quite often. On linux this is quite fast, but on windows it gets really slow.
+run `npm install` to set it up.
 
 ## Output for windows
 For the remote runner start chromedriver on port 9999:
