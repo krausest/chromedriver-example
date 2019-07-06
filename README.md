@@ -31,3 +31,29 @@ main: 28.691ms driver is created
 DevTools listening on ws://127.0.0.1:53578/devtools/browser/7faec849-9fb1-46b5-8bc3-881eb6443020
 main: 10090.361ms page was loaded
 ```
+## Output for linux
+```
+./node_modules/.bin/chromedriver --port=9998 --verbose --log-path=chromedriver.log
+```
+remote chromedriver:
+```
+[stefan@blade chromedriver-example]$ npm run run-remote
+
+> chromedriver-example@1.0.0 run-remote /data/stefan/Source/Javascript/chromedriver-example
+> cross-env SELENIUM_REMOTE_URL=http://localhost:9998 node run-remote-chromedriver.js
+
+main: 1.627ms driver is created
+main: 1663.900ms page was loaded
+```
+local run:
+```
+stefan@blade chromedriver-example]$ npm run run-local
+
+> chromedriver-example@1.0.0 run-local /data/stefan/Source/Javascript/chromedriver-example
+> node run-js-framework-benchmark.js
+
+main: 4.846ms chromedriver required
+main: 7.237ms configuration has been prepared
+main: 8.442ms driver is created
+main: 2234.075ms page was loaded
+```
