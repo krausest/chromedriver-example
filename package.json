@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "run-local": "node run-js-framework-benchmark.js",
-    "run-remote": "cross-env SELENIUM_REMOTE_URL=http://localhost:9998 node run-remote-chromedriver.js"
+    "run-remote": "node run-remote-chromedriver.js"
   },
   "author": "",
   "license": "Apache-2.0",
